@@ -83,11 +83,14 @@ Adjusting the enlargement factor alters the number of output channels in the cha
 ### Pre-trained networks
 
 You can find pre-trained networks for ring-array system here: 
-[https://drive.google.com/drive/folders/1-84ORv4wB8W3M6WngFTtccuW7SlPku0V](https://drive.google.com/file/d/1Kp4gcmioyspY2X7lQbDqdtry0zmvy_sB/view?usp=share_link)https://drive.google.com/file/d/1Kp4gcmioyspY2X7lQbDqdtry0zmvy_sB/view?usp=share_link
+[model_unet_phantom.hdf5](https://drive.google.com/file/d/1Kp4gcmioyspY2X7lQbDqdtry0zmvy_sB/view?usp=share_link)
 
 ## Other
 
+The dataset provided here allows for a simple and stable replication of the fractal results presented in my paper. Should you require any additional data from my publication, or if you encounter difficulties while training with your own data, please do not hesitate to reach out to me.
 
-The dataset provided here ensures a simple and stable replication of the FRACTAL results. If you need any other data from my paper, feel free to contact me.
+Contact: dkx17@mails.tsinghua.edu.cn"
 
-dkx17@mails.tsinghua.edu.cn
+## Acknowledgements
+
+This project utilizes code from [yu4u's noise2noise repository](https://github.com/yu4u/noise2noise), which is licensed under the MIT License. I extend my heartfelt thanks to the original author for their valuable work, which greatly contributed to the development of this project.
