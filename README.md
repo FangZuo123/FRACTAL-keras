@@ -32,13 +32,11 @@ The detailed options are:
 optional arguments:
   -h, --help            show this help message and exit
   --image_dir  IMAGE_DIR
-                        training image dir
+                        train image dir
 
   --test_dir   TEST_DIR
                         test image dir (default: None)
 
-  --model MODEL         model architecture ('srresnet' or 'unet') (default:
-                        srresnet)
   --weight_file WEIGHT_FILE
                         trained weight file (default: None)
   --image_size IMAGE_SIZE
@@ -46,8 +44,9 @@ optional arguments:
   --batch_size BATCH_SIZE
                         --batch_size 8
   --output_dir OUTPUT_DIR
-                        if set, save resulting images otherwise show result
-                        using imshow (default: None)
+                        save the trained network weights.
+  --model MODEL         model architecture ('srresnet' or 'unet') (default:
+                        srresnet)
 
 ```
 
@@ -57,6 +56,26 @@ Once you've trained a network, you can run a validation dataset through the netw
 
 `python test_model.py --weight_file /content/FRACTAL-keras/phantom_unet_128/phantom_unet.hdf5 --image_dir animal_128 --output_dir sinogram_enlarge2/ --enlargement_factor 2 --model unet`
 
+```
+optional arguments:
+  -h, --help            show this help message and exit
+  --image_dir  IMAGE_DIR
+                        test image dir
+
+  --model MODEL         model architecture ('srresnet' or 'unet') (default:
+                        srresnet)
+  --weight_file WEIGHT_FILE
+                        trained weight file
+
+  --output_dir OUTPUT_DIR
+                        if set, save resulting images otherwise show result
+                        using imshow (default: None)
+
+  --enlargement_factor ENLARGEMENT_FACTOR
+                        N Scales output channel data to 2^N times the original size (default: 2).
+                        
+
+```
 
 ### Pre-trained networks
 
