@@ -78,18 +78,21 @@ optional arguments:
 
 ### Enlargement Factor
 
-Adjusting the enlargement factor alters the number of output channels in the channel data. If the enlargement factor is N, then the number of output channels will be 2^N times the original.This adjustment is independent of the channel count used during training, and N can be varied freely to allow interpolation.
+Adjusting the enlargement factor alters the number of output channels in the channel data. If the enlargement factor is N, then the number of output channels will be 2^N times the original. This adjustment is independent of the channel count used during training, and N can be varied freely to allow interpolation.
 
 ### Pre-trained networks
 
-You can find pre-trained networks for ring-array system here: 
+Here we provides a pre-trained U-Net model trained by a ring-array PACT systems.
+
 [model_unet_phantom.hdf5](https://drive.google.com/file/d/1Kp4gcmioyspY2X7lQbDqdtry0zmvy_sB/view?usp=share_link)
+
+If this pre-trained model doesn't meet your specific needs, you are encouraged to train your own model. Feel free to use this as a starting point for your custom solutions.
 
 ## Other
 
 The dataset provided here allows for a simple and stable replication of the fractal results presented in my paper. Should you require any additional data from my publication, or if you encounter difficulties while training with your own data, please do not hesitate to reach out to me.
 
-Contact: dkx17@mails.tsinghua.edu.cn"
+Contact: dkx17@mails.tsinghua.edu.cn
 
 ## Acknowledgements
 
