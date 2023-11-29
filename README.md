@@ -50,32 +50,35 @@ optional arguments:
 
 ```
 
+
+
 ### Validation using a trained network
 
 Once you've trained a network, you can run a validation dataset through the network:
 
 `python test_model.py --weight_file /content/FRACTAL-keras/phantom_unet_128/phantom_unet.hdf5 --image_dir animal_128 --output_dir sinogram_enlarge2/ --enlargement_factor 2 --model unet`
 
+
 ```
 optional arguments:
   -h, --help            show this help message and exit
+  --weight_file WEIGHT_FILE
+                        trained network weight file
   --image_dir  IMAGE_DIR
                         test image dir
-
-  --model MODEL         model architecture ('srresnet' or 'unet') (default:
-                        srresnet)
-  --weight_file WEIGHT_FILE
-                        trained weight file
-
   --output_dir OUTPUT_DIR
                         if set, save resulting images otherwise show result
                         using imshow (default: None)
-
   --enlargement_factor ENLARGEMENT_FACTOR
-                        N Scales output channel data to 2^N times the original size (default: 2).
-                        
+                        N Multiplies the number of output channels by 2^N (default: 2).
+  --model MODEL         model architecture ('srresnet' or 'unet') (default:
+                        srresnet)                        
 
 ```
+
+### Enlargement Factor
+
+Adjusting the enlargement factor alters the number of output channels in the channel data. If the enlargement factor is N, then the number of output channels will be 2^N times the original.This adjustment is independent of the channel count used during training, and N can be varied freely to allow interpolation.
 
 ### Pre-trained networks
 
