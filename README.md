@@ -24,13 +24,13 @@ Keras >= 2.8, TensorFlow>= 2.8, NumPy, OpenCV
 
 To train the FRACTAL network:
 
-python train.py --image_dir phantom --test_dir animal_256 --image_size 64 --batch_size 8 --lr 0.001 --output_path phantom_unet_128 --model unet
+`python train.py --image_dir phantom --test_dir animal_256 --image_size 64 --batch_size 8 --lr 0.001 --output_path phantom_unet_128 --model unet`
 
 ### Validation using a trained network
 
 Once you've trained a network, you can run a validation dataset through the network:
 
-python test_model.py --weight_file /content/FRACTAL-keras/phantom_unet_128/phantom_unet.hdf5 --image_dir animal_128 --output_dir sinogram_enlarge2/ --enlargement_factor 2 --model unet
+`python test_model.py --weight_file /content/FRACTAL-keras/phantom_unet_128/phantom_unet.hdf5 --image_dir animal_128 --output_dir sinogram_enlarge2/ --enlargement_factor 2 --model unet`
 
 
 ### Pre-trained networks
