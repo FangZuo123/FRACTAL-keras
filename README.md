@@ -36,4 +36,5 @@ The detailed options are:
 Pre-trained networks
 
 You can find pre-trained networks for ring-array system here: 
-https://drive.google.com/drive/folders/1-84ORv4wB8W3M6WngFTtccuW7SlPku0V
+[https://drive.google.com/drive/folders/1-84ORv4wB8W3M6WngFTtccuW7SlPku0V](https://drive.google.com/file/d/1Kp4gcmioyspY2X7lQbDqdtry0zmvy_sB/view?usp=share_link)https://drive.google.com/file/d/1Kp4gcmioyspY2X7lQbDqdtry0zmvy_sB/view?usp=share_link
+
