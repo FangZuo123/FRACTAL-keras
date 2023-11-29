@@ -26,6 +26,31 @@ To train the FRACTAL network:
 
 `python train.py --image_dir phantom --test_dir animal_256 --image_size 64 --batch_size 8 --lr 0.001 --output_path phantom_unet_128 --model unet`
 
+The detailed options are:
+
+```
+optional arguments:
+  -h, --help            show this help message and exit
+  --image_dir  IMAGE_DIR
+                        training image dir
+
+  --test_dir   TEST_DIR
+                        test image dir (default: None)
+
+  --model MODEL         model architecture ('srresnet' or 'unet') (default:
+                        srresnet)
+  --weight_file WEIGHT_FILE
+                        trained weight file (default: None)
+  --image_size IMAGE_SIZE
+                        patch size during training(default: 64)
+  --batch_size BATCH_SIZE
+                        --batch_size 8
+  --output_dir OUTPUT_DIR
+                        if set, save resulting images otherwise show result
+                        using imshow (default: None)
+
+```
+
 ### Validation using a trained network
 
 Once you've trained a network, you can run a validation dataset through the network:
@@ -38,3 +63,9 @@ Once you've trained a network, you can run a validation dataset through the netw
 You can find pre-trained networks for ring-array system here: 
 [https://drive.google.com/drive/folders/1-84ORv4wB8W3M6WngFTtccuW7SlPku0V](https://drive.google.com/file/d/1Kp4gcmioyspY2X7lQbDqdtry0zmvy_sB/view?usp=share_link)https://drive.google.com/file/d/1Kp4gcmioyspY2X7lQbDqdtry0zmvy_sB/view?usp=share_link
 
+## Other
+
+
+The dataset provided here ensures a simple and stable replication of the FRACTAL results. If you need any other data from my paper, feel free to contact me.
+
+dkx17@mails.tsinghua.edu.cn
