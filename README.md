@@ -82,7 +82,7 @@ Adjusting the enlargement factor alters the number of output channels in the cha
 
 ### Pre-trained networks
 
-Here we provides a pre-trained U-Net model trained by a ring-array PACT system.
+We provide a pre-trained U-Net model that has been trained using a ring-array PACT system. This model is suitable for most of the PACT systems we have encountered.
 
 [model_unet_phantom.hdf5](https://drive.google.com/file/d/1Kp4gcmioyspY2X7lQbDqdtry0zmvy_sB/view?usp=share_link)
 
