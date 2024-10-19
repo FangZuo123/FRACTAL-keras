@@ -1,6 +1,6 @@
 # SRResNet: Super-Resolution Residual Network
 
-**SRResNet** (Super-Resolution Residual Network) is a deep learning model for single-image super-resolution, introduced by Ledig et al. in the 2017 paper *"Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network"*. This model is designed to enhance the resolution of low-resolution (LR) images and generate high-resolution (HR) images by leveraging deep residual networks.
+**SRResNet** (Super-Resolution Residual Network) is a deep learning model for single-image super-resolution, introduced by Ledig et al. in the 2016 paper *"Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network"* You can read the original paper on [arXiv](https://arxiv.org/abs/1609.04802). This model is designed to enhance the resolution of low-resolution (LR) images and generate high-resolution (HR) images by leveraging deep residual networks.
 
 ## Key Components of SRResNet
 
